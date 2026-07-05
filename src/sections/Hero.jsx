@@ -1,5 +1,5 @@
-import imageone from "../assets/bannerdesktop.webp"
-import imagetwo from "../assets/bannermobile.webp"
+import imageone from "../assets/desktopbanner.webp"
+import imagetwo from "../assets/mobilebanner.webp"
 const HeroBanner = () => {
   return (
     <section id="home" className="w-full  bg-[var(--brand-cream-soft)]">
