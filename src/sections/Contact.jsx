@@ -1,7 +1,7 @@
-import React from "react";
+"use client";
+
 import {
   MapPin,
-  Building2,
   PhoneCall,
   Mail,
   Send,

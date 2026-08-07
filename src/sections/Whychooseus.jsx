@@ -1,5 +1,5 @@
-import imageone from "../assets/whychooseus.png"
-import imagetwo from "../assets/whychose.png"
+const imageone = "/assets/whychooseus.png"
+const imagetwo = "/assets/whychose.png"
 const Whychooseus = () => {
   return (
     <section id="home" className="max-w-5xl mx-auto">

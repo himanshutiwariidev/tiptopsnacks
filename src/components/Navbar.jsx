@@ -1,6 +1,9 @@
+"use client";
+
 import { useState } from "react";
 import { Menu, X, Phone, Mail } from "lucide-react";
-import logo from "../assets/logo.png";
+
+const logo = "/assets/logo.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);

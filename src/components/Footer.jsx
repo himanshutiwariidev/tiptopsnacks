@@ -13,7 +13,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-import logo from "../assets/logo.png";
+const logo = "/assets/logo.png";
 
 const Footer = () => {
   const quickLinks = [

@@ -1,10 +1,13 @@
+"use client";
+
 import { useEffect, useState } from "react";
-import product1 from "../assets/katori.jpeg";
-import product2 from "../assets/rings.jpeg";
-import product3 from "../assets/jeerapapad.jpeg";
-import product4 from "../assets/ghapaghap.jpeg";
-import product5 from "../assets/paasta.jpeg";
-import product6 from "../assets/kurreymasala.jpeg";
+
+const product1 = "/assets/katori.jpeg";
+const product2 = "/assets/rings.jpeg";
+const product3 = "/assets/jeerapapad.jpeg";
+const product4 = "/assets/ghapaghap.jpeg";
+const product5 = "/assets/paasta.jpeg";
+const product6 = "/assets/kurreymasala.jpeg";
 
 const products = [
   {

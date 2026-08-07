@@ -1,9 +1,9 @@
-import haldiram from "../assets/Haldiram Logo.png";
-import bikanervala from "../assets/Bikarnervala Logo.png";
-import diamond from "../assets/Diamond Logo.png";
-import twentyFourSeven from "../assets/24 Seven Logo.png";
-import bikaji from "../assets/Bika ji Logo.png";
-import babaji from "../assets/babaji.png"
+const haldiram = "/assets/Haldiram Logo.png";
+const bikanervala = "/assets/Bikarnervala Logo.png";
+const diamond = "/assets/Diamond Logo.png";
+const twentyFourSeven = "/assets/24 Seven Logo.png";
+const bikaji = "/assets/Bika ji Logo.png";
+const babaji = "/assets/babaji.png";
 
 const brands = [
   {
