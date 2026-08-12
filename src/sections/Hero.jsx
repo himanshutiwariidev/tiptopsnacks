@@ -1,5 +1,5 @@
-const imageone = "/assets/desktopbanner.webp"
-const imagetwo = "/assets/mobilebanner.webp"
+const imageone = "/assets/desktopbanner.jpeg"
+const imagetwo = "/assets/mobilebanner.jpeg"
 const HeroBanner = () => {
   return (
     <section id="home" className="w-full  bg-[var(--brand-cream-soft)]">
@@ -20,8 +20,7 @@ const HeroBanner = () => {
           className="w-full h-auto object-cover"
         />
       </div>
-      <h1 className="text-xl  md:text-4xl font-bold text-center mt-4 md:mt-8">A Journey of Trust & Quality — Delhi's Leading Snacks Manufacturer
-</h1>
+     
   </section>
   );
 };

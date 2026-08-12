@@ -17,15 +17,17 @@ const AboutSection = () => {
 
           {/* Left Content */}
           <div>
-            <h3 className="text-2xl font-semibold text-[var(--brand-brown)] mb-6">
-              A Journey of Trust & Quality
-            </h3>
+            <h1 className="text-2xl font-semibold text-[var(--brand-brown)] mb-6">
+              A Journey of Trust & Quality — Delhi's Leading Snacks Manufacturer
+            </h1>
 
             <p className="text-[var(--brand-brown-soft)] leading-relaxed mb-5">
               Established in <strong>1991</strong> by visionary entrepreneur
               <strong> Mr. Suresh Chand Goyal</strong>, TIP TOP Food Tech India
               Pvt. Ltd. started as a small operation with a simple mission:
-              delivering quality food products to Indian consumers.
+              delivering quality food products to Indian consumers. As a
+              trusted <strong>snacks manufacturer in Delhi</strong>, we have
+              stayed true to that mission for over three decades.
             </p>
 
             <p className="text-[var(--brand-brown-soft)] leading-relaxed mb-5">
@@ -33,14 +35,16 @@ const AboutSection = () => {
               transforming into a trusted food brand serving customers across
               India. Today, TIP TOP has expanded its operations to more than
               <strong> 25 cities</strong> and has established a strong presence
-              across <strong>25+ states</strong>.
+              across <strong>25+ states</strong>, making us one of the most
+              recognised names among snacks manufacturers in the country.
             </p>
 
             <p className="text-[var(--brand-brown-soft)] leading-relaxed">
               With decades of experience and commitment to excellence, the
               company continues to provide premium-quality food products while
               maintaining the values of trust, authenticity, and customer
-              satisfaction.
+              satisfaction — the same values that make us a dependable snacks
+              manufacturer for businesses and families alike.
             </p>
 
           </div>

@@ -44,12 +44,29 @@ const OEMBrandsSection = () => {
           </span>
 
           <h2 className="brand-heading text-2xl md:text-4xl font-semibold md:font-bold mt-5">
-            Trusted By Industry Leaders
+            Trusted By Industry Leaders — A Reliable{" "}
+            <span className="text-yellow-400">Snacks Manufacturer in Delhi</span>
           </h2>
 
           <p className="max-w-6xl mx-auto mt-4 text-lg text-[var(--brand-brown-soft)]">
-            TIP TOP proudly associates with renowned OEM brands, delivering
-            quality products and trusted manufacturing partnerships across India.
+            We are proud to be the preferred snacks manufacturer in Delhi
+            for retailers, distributors, and growing snack brands across
+            India. Our clients trust us not just for our products, but for
+            our reliability, transparency, and consistent quality standards.
+          </p>
+
+          <p className="max-w-6xl mx-auto mt-4 text-lg text-[var(--brand-brown-soft)]">
+            From small retail partners to large-scale distributors,
+            businesses choose us because we deliver what we promise — fresh
+            snacks, on time, at fair pricing, backed by proper quality
+            certification.
+          </p>
+
+          <p className="max-w-6xl mx-auto mt-6 text-lg text-[var(--brand-brown)]">
+            <strong>Top Notch OEM Brands:</strong> TIP TOP is proudly
+            associated with leading names such as Haldiram's, Bikanervala,
+            Yellow Diamond, 24Seven, and Babaji, reflecting the trust placed
+            in us by some of the biggest players in the food industry.
           </p>
         </div>
 

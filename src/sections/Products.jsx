@@ -51,12 +51,20 @@ const ProductsSection = () => {
 
           <h2 className=" text-2xl md:text-5xl font-semibold md:font-bold mt-5">
             Crunchy & Delicious
-            <span className="text-yellow-400"> Snacks</span>
+            <span className="text-yellow-400"> Snacks</span> from a Trusted
+            Snacks Manufacturer
           </h2>
 
           <p className="max-w-3xl mx-auto mt-4 text-[var(--brand-brown-soft)]">
-            Discover our wide range of tasty snacks made with premium
-            ingredients and irresistible flavors.
+            Great snacks start with great ingredients — and that's exactly
+            where we begin. As an experienced snacks manufacturer, we bring
+            together traditional Indian recipes and modern manufacturing
+            techniques to create snacks that are crunchy, flavourful, and
+            impossible to resist.
+          </p>
+
+          <p className="max-w-3xl mx-auto mt-6 font-semibold text-[var(--brand-brown)]">
+            Our range includes:
           </p>
         </div>
 
@@ -89,6 +97,12 @@ const ProductsSection = () => {
             </div>
           ))}
         </div>
+
+        <p className="max-w-3xl mx-auto mt-10 text-center text-[var(--brand-brown-soft)]">
+          Every product is cooked, seasoned, and packed under hygienic
+          conditions to lock in freshness and flavour — so every bite
+          delivers the perfect crunch.
+        </p>
       </div>
     </section>
   );

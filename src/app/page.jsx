@@ -9,6 +9,7 @@ import WhyChooseUs from '../sections/Whychooseus'
 import Footer from '../components/Footer'
 import ContactSection from '../sections/Contact'
 import TestimonialsSection from '../sections/Testimonial'
+import FAQSection from '../sections/FAQ'
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
 
       <WhyChooseUs/>
    <TestimonialsSection/>
+   <FAQSection/>
    <ContactSection/>
 <Footer/>
     </>
