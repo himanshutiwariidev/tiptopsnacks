@@ -132,8 +132,9 @@ const TestimonialsSection = () => {
             <span>⭐</span> CUSTOMER LOVE
           </div>
           
-          <h2 className="text-3xl md:text-5xl font-semibold md:font-bold text-gray-900 mb-4 tracking-tight">
-            What our <span className="text-yellow-400">customers</span> says
+         <h2 className="text-3xl md:text-5xl font-semibold md:font-bold text-gray-900 mt-5 mb-4 tracking-tight">
+            What Our Customers Say About Our{" "}
+            <span className="text-yellow-500">Snacks Manufacturer</span>
           </h2>
           
           <p className="text-gray-500 text-lg">
