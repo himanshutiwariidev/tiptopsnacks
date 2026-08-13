@@ -11,14 +11,22 @@ const poppins = Poppins({
 
 export const metadata = {
   title: 'TIP TOP Food Tech | Best Snacks Manufacturer in Delhi',
-  description: "TIP TOP Food Tech is a trusted snacks manufacturer in Delhi with 35+ years of experience. Namkeen, chips, popcorn & private label snacks — nationwide delivery.",
-  icons: {
-    icon: '/assets/logo.png',
-  },
+
+  description:
+    'TIP TOP Food Tech is a trusted snacks manufacturer in Delhi with 35+ years of experience. Namkeen, chips, popcorn & private label snacks — nationwide delivery.',
+
   keywords: [
     'Snacks Manufacturer',
     'Snacks Manufacturer In Delhi',
-   ]
+  ],
+
+  icons: {
+    icon: '/assets/logo.png',
+  },
+
+  verification: {
+    google: 'isJ3qgZSlkbuPiJvpXI8BKod7udZG7_P3JTJyhZYvSQ',
+  },
 }
 
 export default function RootLayout({ children }) {
