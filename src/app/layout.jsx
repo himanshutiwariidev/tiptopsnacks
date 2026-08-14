@@ -18,6 +18,8 @@ export const metadata = {
   keywords: [
     'Snacks Manufacturer',
     'Snacks Manufacturer In Delhi',
+    'Best Snacks Manufacturer in Delhi',
+    'Top Snacks Manufacturer in Delhi',
   ],
 
   icons: {

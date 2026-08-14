@@ -1,4 +1,4 @@
-const baseUrl = 'https://www.tiptopfoodtech.com'
+const baseUrl = 'https://snacksmanufacturer.com'
 
 export const dynamic = 'force-static'
 
