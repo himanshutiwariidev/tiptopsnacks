@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import {
   MapPin,
   PhoneCall,
@@ -8,7 +9,36 @@ import {
   Factory,
 } from "lucide-react";
 
+const WEB3FORMS_ACCESS_KEY = "dfdaf450-a82b-4684-af75-6c0803165199";
+
 const ContactSection = () => {
+  const [status, setStatus] = useState("idle"); // idle | sending | success | error
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+    formData.append("access_key", WEB3FORMS_ACCESS_KEY);
+    formData.append("from_name", "Tip Top Snacks Website");
+
+    setStatus("sending");
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  };
+
   const contactCards = [
     {
       icon: <MapPin size={22} />,
@@ -184,16 +214,30 @@ const ContactSection = () => {
 
               <form
                 className="space-y-4"
-                onSubmit={(e) => e.preventDefault()}
+                onSubmit={handleSubmit}
               >
+                {/* Honeypot spam protection */}
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  className="hidden"
+                  style={{ display: "none" }}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+
                 <div className="grid grid-cols-2 gap-4">
                   <input
                     type="text"
+                    name="name"
+                    required
                     placeholder="Your Name"
                     className="w-full border border-gray-200 bg-gray-50 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100 transition"
                   />
                   <input
                     type="email"
+                    name="email"
+                    required
                     placeholder="Email Address"
                     className="w-full border border-gray-200 bg-gray-50 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100 transition"
                   />
@@ -201,29 +245,45 @@ const ContactSection = () => {
 
                 <input
                   type="tel"
+                  name="phone"
                   placeholder="Phone Number"
                   className="w-full border border-gray-200 bg-gray-50 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100 transition"
                 />
 
                 <input
                   type="text"
+                  name="subject"
                   placeholder="Subject"
                   className="w-full border border-gray-200 bg-gray-50 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100 transition"
                 />
 
                 <textarea
                   rows={5}
+                  name="message"
+                  required
                   placeholder="Write your message..."
                   className="w-full border border-gray-200 bg-gray-50 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100 transition resize-none"
                 />
 
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 active:scale-95 text-yellow-900 font-semibold px-7 py-3 rounded-xl text-sm transition-all duration-200"
+                  disabled={status === "sending"}
+                  className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 active:scale-95 text-yellow-900 font-semibold px-7 py-3 rounded-xl text-sm transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Send Message
+                  {status === "sending" ? "Sending..." : "Send Message"}
                   <Send size={15} />
                 </button>
+
+                {status === "success" && (
+                  <p className="text-sm text-green-600">
+                    Thank you! Your message has been sent. We'll get back to you shortly.
+                  </p>
+                )}
+                {status === "error" && (
+                  <p className="text-sm text-red-600">
+                    Something went wrong. Please try again or email us directly.
+                  </p>
+                )}
               </form>
             </div>
 
