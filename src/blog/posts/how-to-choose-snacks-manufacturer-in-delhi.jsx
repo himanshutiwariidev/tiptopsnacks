@@ -81,8 +81,8 @@ export default function Content() {
     <>
       <div className="blog-callout">
         <p>
-          <strong>Quick answer:</strong> A good snacks manufacturer in Delhi should have an
-          FSSAI-licensed factory, a clear quality process, a wide product range, private label
+          <strong>Quick answer:</strong> A good{" "}
+          <a href="/">snacks manufacturer in Delhi</a> should have an FSSAI-licensed factory, a clear quality process, a wide product range, private label
           options and a proven track record with real clients. TIP TOP Food Tech India Pvt. Ltd.
           meets these points. It has made snacks in Delhi since 1991 and supplies to 25+ states
           from its units in Bawana Industrial Area.

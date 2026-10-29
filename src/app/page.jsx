@@ -11,6 +11,10 @@ import ContactSection from '../sections/Contact'
 import TestimonialsSection from '../sections/Testimonial'
 import FAQSection from '../sections/FAQ'
 
+export const metadata = {
+  alternates: { canonical: '/' },
+}
+
 export default function Home() {
   return (
     <>
