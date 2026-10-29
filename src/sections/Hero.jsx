@@ -1,5 +1,5 @@
-const imageone = "/assets/desktopbanner.jpeg"
-const imagetwo = "/assets/mobilebanner.jpeg"
+const imageone = "/assets/desktopbanner.webp"
+const imagetwo = "/assets/mobilebanner.webp"
 const HeroBanner = () => {
   return (
     <section id="home" className="w-full  bg-[var(--brand-cream-soft)]">

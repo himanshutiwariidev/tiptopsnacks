@@ -3,20 +3,19 @@
 import { useState } from "react";
 import { Menu, X, Phone, Mail } from "lucide-react";
 
-const logo = "/assets/logo.png";
+const logo = "/assets/logo.webp";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", link: "#home" },
-    { name: "OEM Partners", link: "#oem" },
-    { name: "Products", link: "#products" },
-    { name: "About Us", link: "#about" },
-    { name: "Partners", link: "#partners" },
-    { name: "Why Us", link: "#why-us" },
-    { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact Us", link: "#contact" },
+    { name: "Home", link: "/#home" },
+    { name: "OEM Partners", link: "/#oem" },
+    { name: "Products", link: "/#products" },
+    { name: "About Us", link: "/#about" },
+    { name: "Partners", link: "/#partners" },
+    { name: "Blog", link: "/blog/" },
+    { name: "Contact Us", link: "/#contact" },
   ];
 
   return (
@@ -53,9 +52,9 @@ const Header = () => {
       {/* Navbar */}
       <nav className="sticky top-0 z-50 bg-white/95 shadow-md backdrop-blur border-b border-[rgba(197,139,8,0.2)]">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex items-center justify-between h-17">
+          <div className="flex items-center justify-between gap-4 h-17">
             {/* Logo */}
-            <a href="#home" className="flex items-center gap-3" onClick={() => setMenuOpen(false)}>
+            <a href="/#home" className="flex shrink-0 items-center gap-3" onClick={() => setMenuOpen(false)}>
               <img
                 src={logo}
                 alt="Tip Top"
@@ -66,7 +65,7 @@ const Header = () => {
             </a>
 
             {/* Desktop Menu */}
-            <div className="hidden lg:flex items-center gap-6">
+            <div className="hidden xl:flex items-center gap-6 whitespace-nowrap">
               {navLinks.map((item) => (
                 <a
                   key={item.name}
@@ -81,8 +80,8 @@ const Header = () => {
             </div>
 
             {/* Desktop CTA */}
-            <div className="hidden lg:block">
-              <a href="#contact" className="brand-button inline-flex px-6 py-3 rounded-full font-semibold transition-all duration-300">
+            <div className="hidden xl:block">
+              <a href="/#contact" className="brand-button inline-flex whitespace-nowrap px-6 py-3 rounded-full font-semibold transition-all duration-300">
                 Become Distributor
               </a>
             </div>
@@ -90,7 +89,7 @@ const Header = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="lg:hidden text-[var(--brand-red)]"
+              className="xl:hidden text-[var(--brand-red)]"
               aria-label="Toggle navigation menu"
             >
               {menuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -100,7 +99,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden overflow-hidden transition-all duration-300 ${
+          className={`xl:hidden overflow-hidden transition-all duration-300 ${
             menuOpen ? "max-h-[500px]" : "max-h-0"
           }`}
         >
@@ -118,7 +117,7 @@ const Header = () => {
 
             <div className="p-5">
               <a
-                href="#contact"
+                href="/#contact"
                 onClick={() => setMenuOpen(false)}
                 className="brand-button flex w-full justify-center py-3 rounded-lg font-semibold"
               >

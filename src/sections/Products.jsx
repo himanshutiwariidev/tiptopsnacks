@@ -1,9 +1,9 @@
-const product1 = "/assets/katori.jpeg";
-const product2 = "/assets/rings.jpeg";
-const product3 = "/assets/jeerapapad.jpeg";
-const product4 = "/assets/ghapaghap.jpeg";
-const product5 = "/assets/paasta.jpeg";
-const product6 = "/assets/kurreymasala.jpeg";
+const product1 = "/assets/katori.webp";
+const product2 = "/assets/rings.webp";
+const product3 = "/assets/jeerapapad.webp";
+const product4 = "/assets/ghapaghap.webp";
+const product5 = "/assets/paasta.webp";
+const product6 = "/assets/kurreymasala.webp";
 
 const products = [
   {

@@ -1,9 +1,9 @@
-const haldiram = "/assets/Haldiram Logo.png";
-const bikanervala = "/assets/Bikarnervala Logo.png";
-const diamond = "/assets/Diamond Logo.png";
-const twentyFourSeven = "/assets/24 Seven Logo.png";
-const bikaji = "/assets/Bika ji Logo.png";
-const babaji = "/assets/babaji.png";
+const haldiram = "/assets/Haldiram Logo.webp";
+const bikanervala = "/assets/Bikarnervala Logo.webp";
+const diamond = "/assets/Diamond Logo.webp";
+const twentyFourSeven = "/assets/24 Seven Logo.webp";
+const bikaji = "/assets/Bika ji Logo.webp";
+const babaji = "/assets/babaji.webp";
 
 const brands = [
   {

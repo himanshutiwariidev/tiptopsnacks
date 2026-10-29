@@ -13,16 +13,17 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-const logo = "/assets/logo.png";
+const logo = "/assets/logo.webp";
 
 const Footer = () => {
   const quickLinks = [
-    { name: "Home", link: "#home" },
-    { name: "About Us", link: "#about" },
-    { name: "Products", link: "#products" },
-    { name: "OEM Partners", link: "#oem" },
-    { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact Us", link: "#contact" },
+    { name: "Home", link: "/#home" },
+    { name: "About Us", link: "/#about" },
+    { name: "Products", link: "/#products" },
+    { name: "OEM Partners", link: "/#oem" },
+    { name: "Testimonials", link: "/#testimonials" },
+    { name: "Blog", link: "/blog/" },
+    { name: "Contact Us", link: "/#contact" },
   ];
 
   return (

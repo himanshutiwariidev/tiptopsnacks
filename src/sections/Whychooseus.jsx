@@ -1,5 +1,5 @@
-const imageone = "/assets/whychooseus.png"
-const imagetwo = "/assets/whychose.png"
+const imageone = "/assets/whychooseus.webp"
+const imagetwo = "/assets/whychose.webp"
 const Whychooseus = () => {
   return (
     <section id="home" className="max-w-5xl mx-auto">

@@ -1,9 +1,9 @@
-const kendriyaBhandar = "/assets/Kendriya Bhandhar.png";
-const cpc = "/assets/Central Police Canteen.png";
-const railway = "/assets/Northern Railway.png";
-const nafed = "/assets/NAFED Logo.png";
-const irctc = "/assets/IRCTC Logo.png";
-const hafed = "/assets/HAFED LOGO IMAGE.png";
+const kendriyaBhandar = "/assets/Kendriya Bhandhar.webp";
+const cpc = "/assets/Central Police Canteen.webp";
+const railway = "/assets/Northern Railway.webp";
+const nafed = "/assets/NAFED Logo.webp";
+const irctc = "/assets/IRCTC Logo.webp";
+const hafed = "/assets/HAFED LOGO IMAGE.webp";
 
 const partners = [
   kendriyaBhandar,

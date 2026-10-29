@@ -22,4 +22,4 @@ Open [http://localhost:3000](http://localhost:3000).
 
 - `src/app` – App Router entry (`layout.jsx`, `page.jsx`, `globals.css`)
 - `src/components`, `src/sections` – page components
-- `public/assets` – static images, referenced by absolute path (e.g. `/assets/logo.png`)
+- `public/assets` – static images, referenced by absolute path (e.g. `/assets/logo.webp`)

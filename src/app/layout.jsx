@@ -10,6 +10,8 @@ const poppins = Poppins({
 })
 
 export const metadata = {
+  metadataBase: new URL('https://snacksmanufacturer.com'),
+
   title: 'TIP TOP Food Tech | Best Snacks Manufacturer in Delhi',
 
   description:
@@ -23,7 +25,7 @@ export const metadata = {
   ],
 
   icons: {
-    icon: '/assets/logo.png',
+    icon: '/assets/logo.webp',
   },
 
   verification: {
